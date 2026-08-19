@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Indian City Simulator 3D</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="hud">
+  <div>❤️ Health: <span id="health">100</span></div>
+  <div>💰 Money: ₹<span id="money">0</span></div>
+  <div>⭐ Wanted: <span id="wanted">0</span></div>
+  <div id="mission">Mission: reach the yellow marker</div>
+</div>
+<div id="crosshair">+</div>
+<div id="controls">
+  <div class="pad">
+    <button id="up">▲</button><button id="left">◀</button><button id="down">▼</button><button id="right">▶</button>
+  </div>
+  <button id="shoot">🔫<br>SHOOT</button>
+  <button id="enter">🚗<br>CAR</button>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
