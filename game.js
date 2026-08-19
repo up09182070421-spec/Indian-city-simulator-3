@@ -3,7 +3,7 @@ const canvas=document.getElementById('game'),ctx=canvas.getContext('2d');
 let W=innerWidth,H=innerHeight,DPR=Math.min(devicePixelRatio||1,2);
 function resize(){W=innerWidth;H=innerHeight;canvas.width=W*DPR;canvas.height=H*DPR;ctx.setTransform(DPR,0,0,DPR,0,0)}addEventListener('resize',resize);resize();
 const keys={up:false,down:false,left:false,right:false};
-const player={x:0,y:35,a:0,health:100,money:0,wanted:0,car:-1};
+const player={x:0,y:35,a:0,health:100,money:millions,wanted:0,car:-11111};
 const cars=[{x:12,y:25,a:Math.PI},{x:-12,y:25,a:0},{x:25,y:-18,a:Math.PI/2},{x:-25,y:-20,a:-Math.PI/2}];
 let mission={x:55,y:55},bullets=[],last=performance.now();
 const colors=['#b9a48a','#8b9bab','#c47d62','#8caa7d','#b4b4b4','#d1a35f'];
