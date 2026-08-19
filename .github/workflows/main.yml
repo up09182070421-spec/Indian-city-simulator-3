@@ -27,6 +27,13 @@ jobs:
           npm install @capacitor/core @capacitor/cli @capacitor/android
           npx cap add android
 
+      - name: Prepare web assets
+        run: |
+          mkdir -p www
+          cp index.html www/
+          cp style.css www/
+          cp game.js www/
+
       - name: Sync Android
         run: npx cap sync android
 
